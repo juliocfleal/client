@@ -39,6 +39,15 @@ public class Client {
 		this.birthDate = birthDate;
 		this.children = children;
 	}
+	
+	public Client(ClientDTO dto) {
+		this.id = dto.getId();
+		this.name = dto.getName();
+		this.cpf = dto.getCpf();
+		this.income = dto.getIncome();
+		this.birthDate = dto.getBirthDate();
+		this.children = dto.getChildren();
+	}
 
 	public Long getId() {
 		return id;
